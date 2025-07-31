@@ -1,21 +1,23 @@
 package day3;
 
 public class Customer {
-	private int cid;
-	private String cname;
+	private int id;
+	private String name;
 	private String city;
 	
-	public int getCid() {
-		return cid;
+
+	
+	public int getId() {
+		return id;
 	}
-	public void setCid(int cid) {
-		this.cid = cid;
+	public void setId(int id) {
+		this.id = id;
 	}
-	public String getCname() {
-		return cname;
+	public String getName() {
+		return name;
 	}
-	public void setCname(String cname) {
-		this.cname = cname;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public String getCity() {
 		return city;
@@ -23,8 +25,10 @@ public class Customer {
 	public void setCity(String city) {
 		this.city = city;
 	}
-	
-	
-	
 
+
+@Override
+public String toString() {
+	return "Customer [id=" + id + ", name=" + name + ", city=" + city + "]";
+}
 }
